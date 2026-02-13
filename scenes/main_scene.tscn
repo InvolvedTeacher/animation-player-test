@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://ck03um6a4rbhm"]
+
+[ext_resource type="Texture2D" uid="uid://c1obn510tuy5u" path="res://assets/background.png" id="1_pw63i"]
+[ext_resource type="PackedScene" uid="uid://dp40itfl3yeqj" path="res://scenes/player.tscn" id="1_w2twt"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_w2twt"]
+size = Vector2(1152, 85)
+
+[node name="MainScene" type="Node" unique_id=549127049]
+
+[node name="Background" type="TextureRect" parent="." unique_id=118590325]
+texture_filter = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_pw63i")
+stretch_mode = 1
+
+[node name="Player" parent="." unique_id=249960603 instance=ExtResource("1_w2twt")]
+texture_filter = 1
+position = Vector2(576, 150)
+
+[node name="Floor" type="StaticBody2D" parent="." unique_id=396523639]
+position = Vector2(-1, 571)
+collision_mask = 0
+
+[node name="FloorCollision" type="CollisionShape2D" parent="Floor" unique_id=974881516]
+position = Vector2(576, 32.5)
+shape = SubResource("RectangleShape2D_w2twt")
+
+[node name="FloorTexture" type="TextureRect" parent="Floor" unique_id=490208031]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="FloorColor" type="ColorRect" parent="Floor/FloorTexture" unique_id=1770632945]
+layout_mode = 0
+offset_top = -8.0
+offset_right = 1151.0
+offset_bottom = 76.0
+color = Color(0.9491226, 0.7315453, 0.47411537, 1)

@@ -1,0 +1,19 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Animation Player Test", "Animation Player Test.csproj", "{B0F88E5C-9CB0-4166-B2B8-7242B683B9FD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+	Debug|Any CPU = Debug|Any CPU
+	ExportDebug|Any CPU = ExportDebug|Any CPU
+	ExportRelease|Any CPU = ExportRelease|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B0F88E5C-9CB0-4166-B2B8-7242B683B9FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0F88E5C-9CB0-4166-B2B8-7242B683B9FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0F88E5C-9CB0-4166-B2B8-7242B683B9FD}.ExportDebug|Any CPU.ActiveCfg = ExportDebug|Any CPU
+		{B0F88E5C-9CB0-4166-B2B8-7242B683B9FD}.ExportDebug|Any CPU.Build.0 = ExportDebug|Any CPU
+		{B0F88E5C-9CB0-4166-B2B8-7242B683B9FD}.ExportRelease|Any CPU.ActiveCfg = ExportRelease|Any CPU
+		{B0F88E5C-9CB0-4166-B2B8-7242B683B9FD}.ExportRelease|Any CPU.Build.0 = ExportRelease|Any CPU
+	EndGlobalSection
+EndGlobal
